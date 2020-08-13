@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <title>radial-gradient</title>
+    <link rel="stylesheet" href="./page/pop-up.css">
+    <style>
+        body{
+            position: relative;
+        }
+        .main_pop-up{
+            display: inline-block;
+            background-color: rgba(0,0,0,0.2);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .pop-up{
+            display: inline-block;
+            width: 25%;
+            height: 30%;
+            position: absolute;
+            top: 0;right: 0;
+            bottom: 0;left: 0;
+            margin: auto;
+            background-color: aliceblue;
+            box-sizing: border-box;
+            border-radius: 5%;
+        }
+        .pop-up-form{
+            width: 100%;
+            height: 100%;
+        }
+        .pop-up-form,
+        .pop-up-content,
+        .pop-up-button{
+            position: absolute;
+        }
+        .pop-up-content{
+            text-align: center;
+            width: 100%;
+            padding: 0 20%;
+            box-sizing: border-box;
+            top: 20%;
+        }
+        .pop-up-button{
+            outline: none;
+            min-width: 25%;
+            min-height: 15%;
+        }
+        .pop-up-button-sure,
+        .pop-up-button-cancel{
+            bottom: 15%;
+            cursor: pointer;
+        }
+        .pop-up-button-sure{
+            left: 20%;
+        }
+        .pop-up-button-cancel{
+            right: 20%;
+        }
+        .pop-up-button-close{
+            position: absolute;
+            top: 5%;
+            right: 3%;
+            font-size: 25px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main_pop-up">
+        <div class="pop-up">
+            <form  method='get' class="pop-up-form">
+                <p class="pop-up-content">是否彻底删除?</p>
+                <input type='submit' value='确定' name='thorough_delete' class='pop-up-button pop-up-button-sure'>
+                <input type='button' value="取消" name="cancel" class='pop-up-button pop-up-button-cancel'>
+            </form>
+        </div>
+    </div>
+    <script>
+        function close() {
+            $(".main_pop-up").hide()
+        }
+        $(".pop-up-button-close").click(close);
+        $(".pop-up-button-cancel").click(close);
+    </script>
+</body>
+</html>
