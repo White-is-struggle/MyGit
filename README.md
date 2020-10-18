@@ -1,11 +1,8 @@
 ## 欢迎来到White Struggle 的 Github
 
 
-由于不太熟悉GitHub的基本许多操作,会一些上传文件,其余的操作没有深入了解
+由于本人很菜，只会注册一个账号，来观看大佬们的日常。
+As I am not good at this, I will only register an account to watch the daily life of boss .
 
-
-可以很清晰的看到 本人的 GitHub 是相当的空旷啊!
-
-
-
-
+可以很清晰的看到本人的GitHub是相当的空旷啊！
+You can clearly see that my GitHub is quite empty ah!
