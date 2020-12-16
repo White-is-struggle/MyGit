@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>考研</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <style>
+        #app{
+            display: inline-block;
+            width: 50%;
+            height: 50px;
+            position: absolute;
+            top: 0;right: 0;
+            bottom: 0;left: 0;
+            margin: auto;
+        }
+        a{
+            padding: 1%;
+            border-radius: 10%;
+            text-decoration: none;
+        }
+        a:hover{
+            background-color: aliceblue;
+
+        }
+        .sir{
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="app" >
+        <div class="sir" v-for="(item, index) in msg">
+            <span>{{item.index}} .</span>
+            <a :href=item.href target="_blank">
+                {{item.name}}
+            </a>
+        </div>
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data(){
+                return{
+                    msg:[
+                        {
+                            index:1,
+                            name:"百日长难句营 （正康英语）",
+                            href:"https://mp.weixin.qq.com/s/4aI4BtU8ykwUymk2S0FB1g"
+                        },
+                        {
+                            index:2,
+                            name:"",
+                            href:""
+                        },
+                    ]
+                }
+            }
+        });
+    </script>
+</body>
+</html>
